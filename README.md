@@ -4,7 +4,18 @@ End-to-end banking analytics project analyzing loan approvals and credit
 risk using Excel, PostgreSQL, Python, and Power BI.
 
 ## Dashboard Preview
-![Dashboard Preview](Banking_Analytics_Dashboard.png)
+
+### Tableau Public
+
+[View the interactive Tableau Public dashboard - Executive Summary](https://public.tableau.com/app/profile/arun.pal4087/viz/BankingLoanAnalyticsDashboard/ExecutiveSummary)
+[Risk & Loan Analysis](https://public.tableau.com/app/profile/arun.pal4087/viz/Banking_Loan_Tableau_Dashboard/RiskLoanAnalysis)
+
+![Executive Summary](Executive_Summary.png)
+![Risk & Loan Analysis](Risk_Loan_Analysis.png)
+
+### Power BI
+
+![Customer Segmentation Dashboard](Banking_Analytics_Dashboard.png)
 
 ## Tech Stack
 - **Excel** — Data cleaning, missing value treatment, pivot tables, KPIs

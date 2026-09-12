@@ -1,0 +1,2031 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='f4ac4935565197f272fdb4147e09f9e4d40cc3a9f5d175660953755c72d80e49' _.fcp.WorkbookFingerprinting.true...creator-author-id='f4ac4935565197f272fdb4147e09f9e4d40cc3a9f5d175660953755c72d80e49' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='f4ac4935565197f272fdb4147e09f9e4d40cc3a9f5d175660953755c72d80e49' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='f4ac4935565197f272fdb4147e09f9e4d40cc3a9f5d175660953755c72d80e49' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='bank_loan_cleaned' inline='true' name='federated.0ecw5ug0ialqep1gpeci81frfzin' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Loan Data' name='textscan.1xn8sfq0cog5h71ecqu2j0hd08np'>
+            <connection class='textscan' directory='C:/Users/acer/Desktop/banking-analytics-dashboard/data' filename='bank_loan_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1xn8sfq0cog5h71ecqu2j0hd08np' name='bank_loan_cleaned.csv' table='[bank_loan_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Loan_ID' ordinal='0' />
+            <column datatype='string' name='Gender' ordinal='1' />
+            <column datatype='string' name='Married' ordinal='2' />
+            <column datatype='string' name='Dependents' ordinal='3' />
+            <column datatype='string' name='Education' ordinal='4' />
+            <column datatype='string' name='Self_Employed' ordinal='5' />
+            <column datatype='integer' name='ApplicantIncome' ordinal='6' />
+            <column datatype='real' name='CoapplicantIncome' ordinal='7' />
+            <column datatype='integer' name='LoanAmount' ordinal='8' />
+            <column datatype='integer' name='Loan_Amount_Term' ordinal='9' />
+            <column datatype='integer' name='Credit_History' ordinal='10' />
+            <column datatype='string' name='Property_Area' ordinal='11' />
+            <column datatype='string' name='Loan_Status' ordinal='12' />
+            <column datatype='real' name='Total_Income' ordinal='13' />
+            <column datatype='string' name='Income_Group' ordinal='14' />
+            <column datatype='string' name='Loan_Status_Label' ordinal='15' />
+            <column datatype='string' name='Credit_Risk' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Loan_ID]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Loan_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Married</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Married]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Married</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dependents]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Dependents</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Self_Employed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Self_Employed]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Self_Employed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ApplicantIncome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ApplicantIncome]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>ApplicantIncome</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CoapplicantIncome</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CoapplicantIncome]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>CoapplicantIncome</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanAmount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LoanAmount]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>LoanAmount</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_Amount_Term</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Loan_Amount_Term]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Loan_Amount_Term</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit_History</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Credit_History]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Credit_History</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property_Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Property_Area]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Property_Area</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Loan_Status]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Loan_Status</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Income]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Total_Income</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income_Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Income_Group]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Income_Group</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_Status_Label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Loan_Status_Label]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Loan_Status_Label</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit_Risk</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Credit_Risk]</local-name>
+            <parent-name>[bank_loan_cleaned.csv]</parent-name>
+            <remote-alias>Credit_Risk</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Applicant Income' datatype='integer' name='[ApplicantIncome]' role='measure' type='quantitative' />
+      <column caption='Approval Rate' datatype='real' name='[Calculation_0914563114258432]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;Y&quot; THEN 1 ELSE 0 END) / COUNT([Loan_ID])' />
+      </column>
+      <column caption='Approved Count' datatype='integer' name='[Calculation_0914563114565633]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;Y&quot; THEN 1 ELSE 0 END)' />
+      </column>
+      <column caption='Rejected Count' datatype='integer' name='[Calculation_0914563114627074]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;N&quot; THEN 1 ELSE 0 END)' />
+      </column>
+      <column caption='Coapplicant Income' datatype='real' name='[CoapplicantIncome]' role='measure' type='quantitative' />
+      <column caption='Credit History' datatype='integer' name='[Credit_History]' role='measure' type='quantitative' />
+      <column caption='Credit Risk' datatype='string' name='[Credit_Risk]' role='dimension' type='nominal' />
+      <column caption='Income Group' datatype='string' name='[Income_Group]' role='dimension' type='nominal' />
+      <column caption='Loan Amount' datatype='integer' name='[LoanAmount]' role='measure' type='quantitative' />
+      <column caption='Loan Amount Term' datatype='integer' name='[Loan_Amount_Term]' role='measure' type='quantitative' />
+      <column caption='Loan ID' datatype='string' name='[Loan_ID]' role='dimension' type='nominal' />
+      <column caption='Loan Status' datatype='string' name='[Loan_Status]' role='dimension' type='nominal' />
+      <column caption='Loan Status Label' datatype='string' name='[Loan_Status_Label]' role='dimension' type='nominal' />
+      <column caption='Property Area' datatype='string' name='[Property_Area]' role='dimension' type='nominal' />
+      <column caption='Self Employed' datatype='string' name='[Self_Employed]' role='dimension' type='nominal' />
+      <column caption='Total Income' datatype='real' name='[Total_Income]' role='measure' type='quantitative' />
+      <column caption='Loan Data' datatype='table' name='[__tableau_internal_object_id__].[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]' role='measure' type='quantitative' />
+      <column-instance column='[LoanAmount]' derivation='Avg' name='[avg:LoanAmount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Loan_ID]' derivation='Count' name='[cnt:Loan_ID:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Credit_Risk]' derivation='None' name='[none:Credit_Risk:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Income_Group]' derivation='None' name='[none:Income_Group:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Loan_Status_Label]' derivation='None' name='[none:Loan_Status_Label:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ApplicantIncome]' derivation='Sum' name='[sum:ApplicantIncome:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Credit_History]' derivation='Sum' name='[sum:Credit_History:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LoanAmount]' derivation='Sum' name='[sum:LoanAmount:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Property Area)' hidden='true' name='[Action (Property Area)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Property_Area]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/acer/AppData/Local/Temp/TableauTemp/#TableauTemp_1c7fs141qqbk2p1gsur4a1v75jt0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/12/2026 09:22:09 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Loan_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Loan_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loan_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>614</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Married</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Married]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Married</remote-alias>
+              <ordinal>2</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dependents</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dependents</remote-alias>
+              <ordinal>3</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education</remote-alias>
+              <ordinal>4</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Self_Employed</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Self_Employed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Self_Employed</remote-alias>
+              <ordinal>5</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ApplicantIncome</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ApplicantIncome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ApplicantIncome</remote-alias>
+              <ordinal>6</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>505</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CoapplicantIncome</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CoapplicantIncome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CoapplicantIncome</remote-alias>
+              <ordinal>7</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>287</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LoanAmount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LoanAmount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoanAmount</remote-alias>
+              <ordinal>8</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>203</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Loan_Amount_Term</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Loan_Amount_Term]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loan_Amount_Term</remote-alias>
+              <ordinal>9</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Credit_History</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Credit_History]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Credit_History</remote-alias>
+              <ordinal>10</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Property_Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Property_Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Property_Area</remote-alias>
+              <ordinal>11</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Loan_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Loan_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loan_Status</remote-alias>
+              <ordinal>12</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total_Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Income</remote-alias>
+              <ordinal>13</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>554</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income_Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Income_Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income_Group</remote-alias>
+              <ordinal>14</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Loan_Status_Label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Loan_Status_Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loan_Status_Label</remote-alias>
+              <ordinal>15</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Credit_Risk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Credit_Risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Credit_Risk</remote-alias>
+              <ordinal>16</ordinal>
+              <family>bank_loan_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Credit_Risk:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Low Risk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;High Risk&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Loan_Status_Label:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Approved&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rejected&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[avg:LoanAmount:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[sum:LoanAmount:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[sum:ApplicantIncome:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[sum:Credit_History:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Income_Group:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Very High&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Loan Data' id='bank_loan_cleaned.csv_ED2E368F7C354B54A6DF8EA718DC9EBC'>
+            <properties context=''>
+              <relation connection='textscan.1xn8sfq0cog5h71ecqu2j0hd08np' name='bank_loan_cleaned.csv' table='[bank_loan_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Loan_ID' ordinal='0' />
+                  <column datatype='string' name='Gender' ordinal='1' />
+                  <column datatype='string' name='Married' ordinal='2' />
+                  <column datatype='string' name='Dependents' ordinal='3' />
+                  <column datatype='string' name='Education' ordinal='4' />
+                  <column datatype='string' name='Self_Employed' ordinal='5' />
+                  <column datatype='integer' name='ApplicantIncome' ordinal='6' />
+                  <column datatype='real' name='CoapplicantIncome' ordinal='7' />
+                  <column datatype='integer' name='LoanAmount' ordinal='8' />
+                  <column datatype='integer' name='Loan_Amount_Term' ordinal='9' />
+                  <column datatype='integer' name='Credit_History' ordinal='10' />
+                  <column datatype='string' name='Property_Area' ordinal='11' />
+                  <column datatype='string' name='Loan_Status' ordinal='12' />
+                  <column datatype='real' name='Total_Income' ordinal='13' />
+                  <column datatype='string' name='Income_Group' ordinal='14' />
+                  <column datatype='string' name='Loan_Status_Label' ordinal='15' />
+                  <column datatype='string' name='Credit_Risk' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action2_2BF822A789404D02AF80612B6FA35E9E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Executive Summary' type='sheet' worksheet='Approval by Area' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Executive Summary' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_AC1872C0DDD140919C5FF6467C634468]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Executive Summary' type='sheet' worksheet='Approval by Education' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Executive Summary' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_9D6E0BDF35DC4BC7AB884D64EB1F61D0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Risk &amp; Loan Analysis' type='sheet' worksheet='Credit Risk Donut' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Risk &amp; Loan Analysis' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_BB9AB56E35234F72A4E2F716107AC31D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Risk &amp; Loan Analysis' type='sheet' worksheet='Income Group Treemap' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Risk &amp; Loan Analysis' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Approval by Area'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='Approval Rate' datatype='real' name='[Calculation_0914563114258432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;Y&quot; THEN 1 ELSE 0 END) / COUNT([Loan_ID])' />
+            </column>
+            <column caption='Loan ID' datatype='string' name='[Loan_ID]' role='dimension' type='nominal' />
+            <column caption='Loan Status' datatype='string' name='[Loan_Status]' role='dimension' type='nominal' />
+            <column caption='Property Area' datatype='string' name='[Property_Area]' role='dimension' type='nominal' />
+            <column-instance column='[Property_Area]' derivation='None' name='[none:Property_Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0914563114258432]' derivation='User' name='[usr:Calculation_0914563114258432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Property_Area:nk]'>
+            <groupfilter function='level-members' level='[none:Property_Area:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Property_Area:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Property_Area:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#9d7660' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Property_Area:nk]</rows>
+        <cols>[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]</cols>
+      </table>
+      <simple-id uuid='{2CB32594-9E55-4DFF-9589-994A0B0D0DDF}' />
+    </worksheet>
+    <worksheet name='Approval by Dependents'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='Approval Rate' datatype='real' name='[Calculation_0914563114258432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;Y&quot; THEN 1 ELSE 0 END) / COUNT([Loan_ID])' />
+            </column>
+            <column datatype='string' name='[Dependents]' role='dimension' type='nominal' />
+            <column caption='Loan ID' datatype='string' name='[Loan_ID]' role='dimension' type='nominal' />
+            <column caption='Loan Status' datatype='string' name='[Loan_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Dependents]' derivation='None' name='[none:Dependents:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0914563114258432]' derivation='User' name='[usr:Calculation_0914563114258432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Dependents:nk]' direction='DESC' using='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]</rows>
+        <cols>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Dependents:nk]</cols>
+      </table>
+      <simple-id uuid='{BF277723-79FF-4BA7-A91F-150428CDCC9E}' />
+    </worksheet>
+    <worksheet name='Approval by Education'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='Approval Rate' datatype='real' name='[Calculation_0914563114258432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;Y&quot; THEN 1 ELSE 0 END) / COUNT([Loan_ID])' />
+            </column>
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column caption='Loan ID' datatype='string' name='[Loan_ID]' role='dimension' type='nominal' />
+            <column caption='Loan Status' datatype='string' name='[Loan_Status]' role='dimension' type='nominal' />
+            <column caption='Property Area' datatype='string' name='[Property_Area]' role='dimension' type='nominal' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0914563114258432]' derivation='User' name='[usr:Calculation_0914563114258432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[Action (Property Area)]'>
+            <groupfilter function='level-members' level='[Property_Area]' user:ui-action-filter='[Action2_2BF822A789404D02AF80612B6FA35E9E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Education:nk]'>
+            <groupfilter function='level-members' level='[none:Education:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Education:nk]</column>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[Action (Property Area)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#edc948' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Education:nk]</rows>
+        <cols>[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]</cols>
+      </table>
+      <simple-id uuid='{000335EC-7B86-4A6C-92F5-05B3AF22BA15}' />
+    </worksheet>
+    <worksheet name='Avg Loan by Area'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='Loan Amount' datatype='integer' name='[LoanAmount]' role='measure' type='quantitative' />
+            <column caption='Property Area' datatype='string' name='[Property_Area]' role='dimension' type='nominal' />
+            <column-instance column='[LoanAmount]' derivation='Avg' name='[avg:LoanAmount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Property_Area]' derivation='None' name='[none:Property_Area:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#9d7660' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Property_Area:nk]</rows>
+        <cols>[federated.0ecw5ug0ialqep1gpeci81frfzin].[avg:LoanAmount:qk]</cols>
+      </table>
+      <simple-id uuid='{405E6C10-6C65-4C18-A42C-CC5C7107638D}' />
+    </worksheet>
+    <worksheet name='Credit History Impact'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='Credit History' datatype='integer' name='[Credit_History]' role='measure' type='quantitative' />
+            <column caption='Loan ID' datatype='string' name='[Loan_ID]' role='dimension' type='nominal' />
+            <column caption='Loan Status Label' datatype='string' name='[Loan_Status_Label]' role='dimension' type='nominal' />
+            <column caption='Property Area' datatype='string' name='[Property_Area]' role='dimension' type='nominal' />
+            <column-instance column='[Loan_ID]' derivation='Count' name='[cnt:Loan_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Loan_Status_Label]' derivation='None' name='[none:Loan_Status_Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Credit_History]' derivation='Sum' name='[sum:Credit_History:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[sum:Credit_History:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[sum:Credit_History:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[Action (Property Area)]'>
+            <groupfilter function='level-members' level='[Property_Area]' user:ui-action-filter='[Action2_2BF822A789404D02AF80612B6FA35E9E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[:Measure Names]</column>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[Action (Property Area)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Loan_Status_Label:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ecw5ug0ialqep1gpeci81frfzin].[Multiple Values]</rows>
+        <cols>([federated.0ecw5ug0ialqep1gpeci81frfzin].[:Measure Names] / [federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Loan_Status_Label:nk])</cols>
+      </table>
+      <simple-id uuid='{52633893-7D11-4C14-9213-564D3B624E78}' />
+    </worksheet>
+    <worksheet name='Credit Risk Donut'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='MIN(1)' datatype='integer' name='[Calculation_0914563128012806]' role='measure' type='quantitative' user:unnamed='Credit Risk Donut'>
+              <calculation class='tableau' formula='MIN(1)' />
+            </column>
+            <column caption='Credit Risk' datatype='string' name='[Credit_Risk]' role='dimension' type='nominal' />
+            <column caption='Loan ID' datatype='string' name='[Loan_ID]' role='dimension' type='nominal' />
+            <column-instance column='[Loan_ID]' derivation='Count' name='[cnt:Loan_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Credit_Risk]' derivation='None' name='[none:Credit_Risk:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0914563128012806]' derivation='User' name='[usr:Calculation_0914563128012806:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Credit_Risk:nk]'>
+            <groupfilter function='level-members' level='[none:Credit_Risk:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Credit_Risk:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563128012806:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='width' field='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563128012806:qk]' value='10' />
+            <format attr='display' class='0' field='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563128012806:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563128012806:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='230' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563128012806:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Credit_Risk:nk]' />
+              <size column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]' />
+              <wedge-size column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5712155103683472' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563128012806:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Credit_Risk:nk]' />
+              <text column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.88955801725387573' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563128012806:qk] + [federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563128012806:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{617FC9A4-CA73-4283-B736-1B07B2CED5B6}' />
+    </worksheet>
+    <worksheet name='Gender &amp; Marital'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='Approval Rate' datatype='real' name='[Calculation_0914563114258432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;Y&quot; THEN 1 ELSE 0 END) / COUNT([Loan_ID])' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Loan ID' datatype='string' name='[Loan_ID]' role='dimension' type='nominal' />
+            <column caption='Loan Status' datatype='string' name='[Loan_Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Married]' role='dimension' type='nominal' />
+            <column caption='Property Area' datatype='string' name='[Property_Area]' role='dimension' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Married]' derivation='None' name='[none:Married:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0914563114258432]' derivation='User' name='[usr:Calculation_0914563114258432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[Action (Property Area)]'>
+            <groupfilter function='level-members' level='[Property_Area]' user:ui-action-filter='[Action2_2BF822A789404D02AF80612B6FA35E9E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Gender:nk]</column>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[Action (Property Area)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Married:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]</rows>
+        <cols>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Gender:nk]</cols>
+      </table>
+      <simple-id uuid='{7ED92C20-58E6-4C29-B89D-BDAB982333C1}' />
+    </worksheet>
+    <worksheet name='Income Group Treemap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='Income Group' datatype='string' name='[Income_Group]' role='dimension' type='nominal' />
+            <column caption='Loan ID' datatype='string' name='[Loan_ID]' role='dimension' type='nominal' />
+            <column-instance column='[Loan_ID]' derivation='Count' name='[cnt:Loan_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Income_Group]' derivation='None' name='[none:Income_Group:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Income_Group:nk]'>
+            <groupfilter function='level-members' level='[none:Income_Group:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Income_Group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Income_Group:nk]' />
+              <size column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]' />
+              <text column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Income_Group:nk]' />
+              <text column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{42C6082C-F61C-4B10-8CB4-32F141B0A33F}' />
+    </worksheet>
+    <worksheet name='Income vs Loan'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='Applicant Income' datatype='integer' name='[ApplicantIncome]' role='measure' type='quantitative' />
+            <column caption='Loan Amount' datatype='integer' name='[LoanAmount]' role='measure' type='quantitative' />
+            <column caption='Loan Status Label' datatype='string' name='[Loan_Status_Label]' role='dimension' type='nominal' />
+            <column caption='Property Area' datatype='string' name='[Property_Area]' role='dimension' type='nominal' />
+            <column-instance column='[Loan_Status_Label]' derivation='None' name='[none:Loan_Status_Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Property_Area]' derivation='None' name='[none:Property_Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ApplicantIncome]' derivation='Sum' name='[sum:ApplicantIncome:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LoanAmount]' derivation='Sum' name='[sum:LoanAmount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Loan_Status_Label:nk]' />
+              <lod column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Property_Area:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0ecw5ug0ialqep1gpeci81frfzin].[sum:LoanAmount:qk]</rows>
+        <cols>[federated.0ecw5ug0ialqep1gpeci81frfzin].[sum:ApplicantIncome:qk]</cols>
+      </table>
+      <simple-id uuid='{644ED7C0-E730-4907-AB89-8190059B0BE2}' />
+    </worksheet>
+    <worksheet name='KPI Summary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank_loan_cleaned' name='federated.0ecw5ug0ialqep1gpeci81frfzin' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ecw5ug0ialqep1gpeci81frfzin'>
+            <column caption='Approval Rate' datatype='real' name='[Calculation_0914563114258432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;Y&quot; THEN 1 ELSE 0 END) / COUNT([Loan_ID])' />
+            </column>
+            <column caption='Approved Count' datatype='integer' name='[Calculation_0914563114565633]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;Y&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Rejected Count' datatype='integer' name='[Calculation_0914563114627074]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [Loan_Status] = &quot;N&quot; THEN 1 ELSE 0 END)' />
+            </column>
+            <column caption='Loan ID' datatype='string' name='[Loan_ID]' role='dimension' type='nominal' />
+            <column caption='Loan Status' datatype='string' name='[Loan_Status]' role='dimension' type='nominal' />
+            <column caption='Property Area' datatype='string' name='[Property_Area]' role='dimension' type='nominal' />
+            <column-instance column='[Loan_ID]' derivation='Count' name='[cnt:Loan_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0914563114258432]' derivation='User' name='[usr:Calculation_0914563114258432:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0914563114565633]' derivation='User' name='[usr:Calculation_0914563114565633:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0914563114627074]' derivation='User' name='[usr:Calculation_0914563114627074:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114565633:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114627074:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114565633:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114627074:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[Action (Property Area)]'>
+            <groupfilter function='level-members' level='[Property_Area]' user:ui-action-filter='[Action2_2BF822A789404D02AF80612B6FA35E9E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[:Measure Names]</column>
+            <column>[federated.0ecw5ug0ialqep1gpeci81frfzin].[Action (Property Area)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ecw5ug0ialqep1gpeci81frfzin].[usr:Calculation_0914563114258432:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ecw5ug0ialqep1gpeci81frfzin].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0ecw5ug0ialqep1gpeci81frfzin].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{5D38C4BC-D06C-4ECA-B485-33AEF44A6EF3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Executive Summary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20' underline='true'>Banking Loan Analytics — Executive Summary</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='24' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+            <zone h='5125' id='25' type-v2='title' w='98666' x='667' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92875' id='19' param='horz' type-v2='layout-flow' w='98666' x='667' y='6125'>
+              <zone h='92875' id='17' type-v2='layout-basic' w='98666' x='667' y='6125'>
+                <zone h='11125' id='12' param='horz' type-v2='layout-flow' w='98666' x='667' y='6125'>
+                  <zone h='11125' id='9' param='horz' type-v2='layout-flow' w='98666' x='667' y='6125'>
+                    <zone h='11125' id='5' param='vert' type-v2='layout-flow' w='98666' x='667' y='6125'>
+                      <zone h='11125' id='3' name='KPI Summary' w='98666' x='667' y='6125'>
+                        <layout-cache fixed-size-h='84' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='35896' id='15' name='Gender &amp; Marital' w='49334' x='49999' y='63104'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='35896' id='10' name='Credit History Impact' w='49332' x='667' y='63104'>
+                  <layout-cache minheight='204' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='25104' id='6' name='Approval by Area' w='98666' x='667' y='38000'>
+                  <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='20750' id='14' name='Approval by Education' w='98666' x='667' y='17250'>
+                  <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20' underline='true'>Banking Loan Analytics — Executive Summary</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='26' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone h='5125' id='25' type-v2='title' w='98666' x='667' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='81' h='11125' id='3' is-fixed='true' name='KPI Summary' w='98666' x='667' y='6125'>
+                  <layout-cache fixed-size-h='84' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='158' h='20750' id='14' is-fixed='true' name='Approval by Education' w='98666' x='667' y='17250'>
+                  <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='193' h='25104' id='6' is-fixed='true' name='Approval by Area' w='98666' x='667' y='38000'>
+                  <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='279' h='35896' id='10' is-fixed='true' name='Credit History Impact' w='49332' x='667' y='63104'>
+                  <layout-cache minheight='204' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='279' h='35896' id='15' is-fixed='true' name='Gender &amp; Marital' w='49334' x='49999' y='63104'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A2E0E90A-615B-4FC3-B273-40B7D47A336D}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Risk &amp; Loan Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20' underline='true'>Risk &amp; Loan Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='border-color' value='#e6e6e6' />
+          <format attr='border-width' value='0' />
+          <format attr='border-style' value='none' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='24' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+            <zone h='5125' id='25' type-v2='title' w='98666' x='667' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92875' id='17' param='vert' type-v2='layout-flow' w='98666' x='667' y='6125'>
+              <zone h='92875' id='13' param='horz' type-v2='layout-flow' w='98666' x='667' y='6125'>
+                <zone h='92875' id='11' type-v2='layout-basic' w='98666' x='667' y='6125'>
+                  <zone h='30958' id='5' param='vert' type-v2='layout-flow' w='98666' x='667' y='6125'>
+                    <zone h='30958' id='6' type-v2='layout-basic' w='98666' x='667' y='6125'>
+                      <zone h='30958' id='10' name='Credit Risk Donut' w='49333' x='667' y='6125'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='30958' id='18' name='Income vs Loan' w='49333' x='50000' y='6125'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='30959' id='8' param='horz' type-v2='layout-flow' w='98666' x='667' y='68041'>
+                    <zone h='30959' id='9' name='Approval by Dependents' w='98666' x='667' y='68041'>
+                      <layout-cache cell-count-w='4' minheight='184' non-cell-size-w='63' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='30958' id='20' name='Avg Loan by Area' w='49333' x='667' y='37083'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='30958' id='21' name='Income Group Treemap' w='49333' x='50000' y='37083'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone fixed-size='160' h='10500' id='12' is-fixed='true' param='vert' type-v2='layout-flow' w='13333' x='1667' y='14750'>
+          <zone h='8250' id='14' name='Credit Risk Donut' pane-specification-id='1' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Credit_Risk:nk]' type-v2='color' w='13333' x='1667' y='14750'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='7250' id='19' name='Income vs Loan' pane-specification-id='0' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Loan_Status_Label:nk]' type-v2='color' w='11667' x='57667' y='14750' />
+        <zone h='12250' id='22' name='Income Group Treemap' pane-specification-id='0' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Income_Group:nk]' type-v2='color' w='11667' x='82583' y='46625' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20' underline='true'>Risk &amp; Loan Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='26' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone h='5125' id='25' type-v2='title' w='98666' x='667' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='240' h='30958' id='10' is-fixed='true' name='Credit Risk Donut' w='49333' x='667' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='14' name='Credit Risk Donut' pane-specification-id='1' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Credit_Risk:nk]' type-v2='color' w='13333' x='1667' y='14750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='240' h='30958' id='18' is-fixed='true' name='Income vs Loan' w='49333' x='50000' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7250' id='19' name='Income vs Loan' pane-specification-id='0' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Loan_Status_Label:nk]' type-v2='color' w='11667' x='57667' y='14750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='239' h='30958' id='20' is-fixed='true' name='Avg Loan by Area' w='49333' x='667' y='37083'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='239' h='30958' id='21' is-fixed='true' name='Income Group Treemap' w='49333' x='50000' y='37083'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12250' id='22' name='Income Group Treemap' pane-specification-id='0' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Income_Group:nk]' type-v2='color' w='11667' x='82583' y='46625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='240' h='30959' id='9' is-fixed='true' name='Approval by Dependents' w='98666' x='667' y='68041'>
+                  <layout-cache cell-count-w='4' minheight='184' non-cell-size-w='63' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{91E2B87B-C93D-408E-AE67-8124D7F445EB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI Summary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{11CAB736-9B92-47C7-B17C-FD9334602AFB}' />
+    </window>
+    <window class='worksheet' name='Approval by Area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B2E3A2E-57DC-4DAA-89ED-98095D71D820}' />
+    </window>
+    <window class='worksheet' name='Approval by Education'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{663D1967-3DA9-474B-B6F2-FC953107E81A}' />
+    </window>
+    <window class='worksheet' name='Credit Risk Donut'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Credit_Risk:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[cnt:Loan_ID:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{34294B35-919E-4B4D-B8FF-27F22CB3BCBC}' />
+    </window>
+    <window class='worksheet' name='Credit History Impact'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Loan_Status_Label:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{72967EF7-5F93-4DAE-9AF6-BF0F7A9A49B2}' />
+    </window>
+    <window class='worksheet' name='Income vs Loan'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Loan_Status_Label:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EBAFD64D-3D9B-4E49-91E7-BFCFFE932133}' />
+    </window>
+    <window class='worksheet' name='Gender &amp; Marital'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Married:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7304A04E-3C6D-4DB7-B97C-3316549B0C70}' />
+    </window>
+    <window class='worksheet' name='Avg Loan by Area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{65B1C0B7-9432-4042-90F9-61F821801CFF}' />
+    </window>
+    <window class='worksheet' name='Income Group Treemap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ecw5ug0ialqep1gpeci81frfzin].[none:Income_Group:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{97788982-B1BC-458B-976D-AD5F0CB1944C}' />
+    </window>
+    <window class='worksheet' name='Approval by Dependents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1E4ADD4-88FE-4307-AD46-0205D642B066}' />
+    </window>
+    <window class='dashboard' name='Executive Summary'>
+      <viewpoints>
+        <viewpoint name='Approval by Area' />
+        <viewpoint name='Approval by Education' />
+        <viewpoint name='Credit History Impact'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender &amp; Marital'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Summary'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{78F2C2A6-80B5-43A1-BF52-211026101624}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Risk &amp; Loan Analysis'>
+      <viewpoints>
+        <viewpoint name='Approval by Dependents'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg Loan by Area' />
+        <viewpoint name='Credit Risk Donut'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Income Group Treemap' />
+        <viewpoint name='Income vs Loan'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{FF225947-E9F8-44F7-BB6C-5A952E3A8326}' />
+    </window>
+  </windows>
+</workbook>
