@@ -1,62 +1,152 @@
 # Banking Customer Analytics & Loan Risk Dashboard
 
-End-to-end banking analytics project analyzing loan approvals and credit 
-risk using Excel, PostgreSQL, Python, and Power BI.
+An end-to-end banking analytics project analyzing loan applications, approval patterns, customer segments, and credit risk using Google Sheet, Excel, Google BigQuery, PostgreSQL, Python, Power BI, Tableau.
 
-## Dashboard Preview
+The project combines data cleaning, exploratory data analysis, SQL-based business analysis, and interactive dashboards to generate insights into loan approval decisions and customer risk profiles.
+
+## Dashboard Previews
 
 ### Tableau Public
 
-View the interactive Tableau Public dashboard
+Explore the interactive Tableau dashboards:
 
-[Executive Summary](https://public.tableau.com/app/profile/arun.pal4087/viz/BankingLoanAnalyticsDashboard/ExecutiveSummary)      
-[Risk & Loan Analysis](https://public.tableau.com/app/profile/arun.pal4087/viz/Banking_Loan_Tableau_Dashboard/RiskLoanAnalysis)
+- [Executive Summary](https://public.tableau.com/app/profile/arun.pal4087/viz/BankingLoanAnalyticsDashboard/ExecutiveSummary)
+- [Risk & Loan Analysis](https://public.tableau.com/app/profile/arun.pal4087/viz/Banking_Loan_Tableau_Dashboard/RiskLoanAnalysis)
+
+**Executive Summary**
 
 ![Executive Summary](Executive_Summary.png)
+
+**Risk & Loan Analysis**
+
 ![Risk & Loan Analysis](Risk_Loan_Analysis.png)
 
 ### Power BI
 
-![Customer Segmentation Dashboard](Banking_Analytics_Dashboard.png)
+Existing five-page interactive dashboard developed using 12 DAX measures.
+
+![Power BI Dashboard](Banking_Analytics_Dashboard.png)
 
 ## Tech Stack
-- **Excel** — Data cleaning, missing value treatment, pivot tables, KPIs
-- **PostgreSQL** — 10 analytical SQL queries with CTEs and window functions
-- **Python** — EDA, correlation analysis, risk segmentation, visualizations
-- **Tableau** — 2-page interactive dashboard with 10 sheets
-- **Power BI** — 5-page interactive dashboard with 12 DAX measures
+
+| Technology | Purpose |
+|---|---|
+| Google Sheets | Data cleaning, missing value treatment, derived columns, and data validation |
+| Excel | Data cleaning, missing value treatment, pivot tables, and KPI analysis |
+| Google BigQuery | Cloud data storage, SQL analysis, and creation of analytical views |
+| PostgreSQL | 10 analytical SQL queries for business analysis |
+| Python | Exploratory data analysis, correlation analysis, risk segmentation, and visualizations |
+| Tableau | Two-page interactive dashboard containing 10 sheets |
+| Power BI | Five-page interactive dashboard containing 12 DAX measures |
 
 ## Dataset
-Bank Loan Prediction Dataset (Kaggle)
-- 614 applicants · 13 features · Real-world loan data
+
+**Bank Loan Prediction Dataset (Kaggle)**
+
+- 614 loan applications
+- 13 original features
+- Includes applicant demographics, income, loan details, credit history, property area, and loan approval status.
+
+## Data Preparation
+
+The project uses multiple tools to prepare and validate the banking dataset.
+
+- **Excel:** Initial data cleaning, missing value treatment, and analysis.
+- **Google Sheets:** Additional data cleaning, missing value treatment, derived columns, and validation.
+- **BigQuery:** Storage of the cleaned Google Sheets dataset and creation of a readable analytical view.
+
+The original dataset and existing cleaned dataset are retained separately.
+
+The Google Sheets cleaned dataset export is available at:
+
+`data/bank_loan_cleaned_google_sheets.csv`
+
+## SQL Analysis
+
+### PostgreSQL
+
+Contains 10 analytical SQL queries addressing business questions related to loan approvals, credit history, income, and customer risk.
+
+### Google BigQuery
+
+The BigQuery implementation includes:
+
+- Table schema definition.
+- Cleaned dataset storage.
+- Analytical view creation.
+- 10 business-focused SQL queries.
+- Risk segmentation using a Common Table Expression (CTE).
+- Applicant income ranking using a window function.
+- A loan summary view for downstream analysis.
+
+**BigQuery Configuration**
+
+- Project ID: `banking-analytics-514808`
+- Dataset: `banking_analytics`
+
+BigQuery SQL files are available in:
+
+`sql/bigquery/`
 
 ## Key Business Insights
-- Overall approval rate: 68.7%
-- Good credit history approval: 79.0% vs Bad credit: only 7.9%
-- Semiurban properties have highest approval at 76.8%
-- High Risk customers have 0% approval rate
-- Married applicants approved at 71.8% vs Single at 62.9%
-- Rejected applicants requested higher loan amounts (150 vs 144)
+
+- Overall loan approval rate: 68.7%.
+- Applicants with good credit history had an approval rate of 79.0%, compared with 7.9% for applicants with poor credit history.
+- Semiurban properties had the highest approval rate at 76.8%.
+- High-risk customers had a 0% approval rate in the analysis.
+- Married applicants had a 71.8% approval rate, compared with 62.9% for single applicants.
+- Rejected applicants requested higher average loan amounts (150) than approved applicants (144).
 
 ## Project Structure
-banking-analytics/
+
+```text
+banking-analytics-dashboard/
+│
 ├── data/
-│ ├── bank_loan.csv
-│ └── bank_loan_cleaned.csv
+│   ├── Bank_Loan_Analytics.xlsx
+│   ├── bank_loan.csv
+│   ├── bank_loan_cleaned.csv
+│   └── bank_loan_cleaned_google_sheets.csv
+│
 ├── sql/
-│ └── queries.sql
+│   ├── queries.sql
+│   └── bigquery/
+│       ├── analysis_queries.sql
+│       └── schema.sql
+│
 ├── python/
-│ ├── load_to_postgres.py
-│ └── eda.py
+│   ├── load_to_postgres.py
+│   └── eda.py
+│
 ├── outputs/
-│ └── (8 EDA charts)
-└── Banking_Loan_Dashboard.pbix
+│   └── EDA charts
+│
 ├── tableau/
-  └── Banking_Loan_Tableau_Dashboard.twb
+│   └── Banking_Loan_Tableau_Dashboard.twb
+│
+├── Banking_Analytics_Dashboard.png
+├── Banking_Loan_Dashboard.pbix
+├── Executive_Summary.png
+└── README.md
+```
 
 ## How to Run
-1. Download Bank Loan dataset from Kaggle
-2. Open `bank_loan.csv` in Excel and perform data cleaning
-3. Load to PostgreSQL and run `sql/queries.sql`
-4. Run `python python/eda.py` for EDA charts
-5. Open `Banking_Loan_Tableau_Dashboard.twb` in public view `Banking_Loan_Dashboard.pbix` in Power BI Desktop
+
+1. Download the Bank Loan Prediction dataset from Kaggle.
+2. Open the raw dataset in Excel and perform data cleaning.
+3. Load the dataset into PostgreSQL and execute the queries in `sql/queries.sql`.
+4. Run the Python scripts to perform exploratory data analysis and generate visualizations.
+5. Open the existing Tableau workbook in Tableau Desktop or explore the published Tableau Public dashboards.
+6. Open the existing Power BI report in Power BI Desktop.
+7. Review the additional data cleaning and validation performed in Google Sheets using the cleaned dataset export.
+8. Access the BigQuery dataset and execute the SQL scripts in `sql/bigquery/`.
+
+## Project Objectives
+
+- Understand loan approval patterns and customer characteristics.
+- Identify factors influencing loan approval decisions.
+- Analyze the relationship between credit history, income, and loan status.
+- Segment applicants based on financial and credit risk.
+- Develop business-focused insights using SQL and Python.
+- Build interactive dashboards to communicate analytical findings.
+- Demonstrate data preparation and cloud analytics using Google Sheets and BigQuery.
